@@ -1,4 +1,5 @@
 "use server";
+import { cookies } from 'next/headers';
 export const authRegistration = async (formData) => {
     let responseData = null;
     const requestUrl = 'https://inlet.ratefy.co/register';
@@ -27,13 +28,24 @@ export const authRegistration = async (formData) => {
     });
 
     try {
-     const requestResponse = await fetch(request, { cache: 'no-store', next: {revalidate: 1} });
+     const requestResponse = await fetch(request);
         if(!requestResponse.ok){
             const errorMessage = await requestResponse.json();
             console.log("Server Error: " +errorMessage.message)
         }else{
             responseData = await requestResponse.json();
-            console.log("System Error: " +responseData);
+            console.log(responseData.data);
+
+
+   
+
+            cookies().set({
+                name: responseData.data.username,
+                value: {email: responseData.data.email, username: responseData.data.username},
+                httpOnly: true,
+                path: '/',
+              })
+
         }
         
     }catch(error) {
