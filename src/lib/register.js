@@ -20,7 +20,7 @@ export const authRegistration = async (formData) => {
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
-            // 'User-Agent': 'Ratefy'
+            'User-Agent': 'Ratefy'
         }, 
         credentials: 'omit',
         body: JSON.stringify(requestData)
@@ -30,15 +30,13 @@ export const authRegistration = async (formData) => {
      const requestResponse = await fetch(request, { cache: 'no-store', next: {revalidate: 1} });
         if(!requestResponse.ok){
             const errorMessage = await requestResponse.json();
-            console.log("==========[ERROR]====111");
-            console.log(errorMessage.message)
+            console.log("Server Error: " +errorMessage.message)
         }else{
             responseData = await requestResponse.json();
-            console.log(responseData);
+            console.log("System Error: " +responseData);
         }
         
     }catch(error) {
-        console.log("==========[ERROR]====2222");
         console.log(error);
     }
     return responseData;
