@@ -1,5 +1,5 @@
 "use server";
-import { cookies } from 'next/headers';
+import { cookies } from 'next/headers'
 export const authRegistration = async (formData) => {
     let responseData = null;
     const requestUrl = 'https://inlet.ratefy.co/register';
@@ -36,20 +36,29 @@ export const authRegistration = async (formData) => {
             responseData = await requestResponse.json();
             console.log(responseData.data);
 
-
-   
-
-            cookies().set({
-                name: responseData.data.username,
-                value: {email: responseData.data.email, username: responseData.data.username},
+            cookies().set('userCookie', responseData.data.uuid, {
                 httpOnly: true,
-                path: '/',
-              })
+            });
+            cookies().set('detailCookie', JSON.stringify(responseData), {
+                httpOnly: true, 
+            });
 
         }
         
     }catch(error) {
         console.log(error);
     }
-    return responseData;
+
+}
+
+export const authUser = async () => {
+    const cookieStore =  cookies();
+    const users = await cookieStore.get('userCookie');
+    return users;
+}
+
+export const authUserDetail = async () => {
+    const cookieStore =  cookies();
+    const users = await cookieStore.get('detailCookie');
+    return users;
 }
