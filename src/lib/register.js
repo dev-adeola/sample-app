@@ -38,9 +38,11 @@ export const authRegistration = async (formData) => {
 
             cookies().set('userCookie', responseData.data.uuid, {
                 httpOnly: true,
+                secure: true,
             });
             cookies().set('detailCookie', JSON.stringify(responseData), {
-                httpOnly: true, 
+                httpOnly: true,
+                secure: true, 
             });
 
         }
