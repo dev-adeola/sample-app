@@ -1,5 +1,5 @@
 import Echo from "laravel-echo";
-import { broadcastAuthInstance } from "./apicalls";
+import axios from 'axios';
 const broadcastAuthInstance = axios.create({
     baseURL: 'https://chat.ratefy.co/api/broadcasting/',// the auth route
     headers: {
@@ -12,9 +12,11 @@ const EchoConfig = () => {
     broadcastAuthInstance.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem('token')}`;
     window.Echo = new Echo({
         broadcaster: 'pusher',
-        key: "local",// same key used in the pusher key 
+        key: "ratefy",
+        cluster: 'mtl',// same key used in the pusher key 
         wsHost: "https://chat.ratefy.co",// host when you deploy would be your domain
-        wsPort: 6002,// same port
+        wssPort: 6002,// same port
+        wssPort: 6002,// same port
         forceTLS: false, // force https to false
         disableStats: true, // don't send stats to pusher because we aren't using pusher
         authorizer: (channel, option) => {
