@@ -13,12 +13,12 @@ const EchoConfig = () => {
     window.Echo = new Echo({
         broadcaster: 'pusher',
         key: "ratefy",
-        cluster: 'mtl',// same key used in the pusher key 
-        wsHost: "https://chat.ratefy.co",// host when you deploy would be your domain
-        wssPort: 6002,// same port
-        wssPort: 6002,// same port
-        forceTLS: false, // force https to false
-        disableStats: true, // don't send stats to pusher because we aren't using pusher
+        cluster: 'mtl',
+        wsHost: "https://chat.ratefy.co",
+        wssPort: 6002,
+        wssPort: 6002,
+        forceTLS: false, 
+        disableStats: true, 
         authorizer: (channel, option) => {
             return {
                 authorize: (socketId, callback) => {

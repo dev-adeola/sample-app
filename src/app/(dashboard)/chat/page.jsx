@@ -7,7 +7,8 @@ const ChatPage = () => {
     useEffect( () =>{
         let currentUser = JSON.parse(localStorage.getItem('user'));
         EchoConfig();
-        window.Echo.presence(`chat.${currentUser.id}`)
+        // window.Echo.presence(`presence.onlinechat.${currentUser.id}`)
+        window.Echo.private(`presence.onlinechat.fdsgsdgfewyffhsfgywsjfjsfhjsfhj`)
         .listen('UserRequestStatusUpdate', (e) => {
             console.log(e.message,'test');
         });
