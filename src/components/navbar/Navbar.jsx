@@ -1,9 +1,15 @@
+import Link from 'next/link';
 const Navbar = () => {
   return (
     <div>
-      <h1 className="text-[56px] text-center">
-            Auth Navbar
-      </h1>
+      
+      <div className="flex justify-evenly">
+        <Link href="/about">About</Link>
+        <Link href="/">Home</Link>
+        <Link href="/register">Register</Link>
+        <Link href="/login">Login</Link>
+      </div>
+
     </div>
   )
 }

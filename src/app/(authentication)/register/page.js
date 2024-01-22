@@ -1,15 +1,6 @@
-import { authRegistration } from '../../../lib/register';
+import { authRegistration } from '@/lib/register';
 
 const RegisterPage = async () => {
-
-  // const handleRegistration = async (e) => {
-  //   "use server";
-  //   // console.log("Registering"); 
-
-
-  // }
-
-
     return (
       <div className="bg-white rounded px-4 py-4 my-20 w-1/6">
         <form action={authRegistration}>

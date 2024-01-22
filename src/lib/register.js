@@ -1,6 +1,7 @@
 "use server";
 import { cookies } from 'next/headers'
 export const authRegistration = async (formData) => {
+    
     let responseData = null;
     const requestUrl = 'https://inlet.ratefy.co/register';
     const { firstname, lastname, username, email, mobile, ip, device, password, password_confirmation } = Object.fromEntries(formData);

@@ -1,13 +1,13 @@
 "use client";
-import { handleChat } from "../../../lib/chat";
-import  EchoConfig  from '../../../lib/echo';
+// import { handleChat } from "../../../lib/chat";
+// import  EchoConfig  from '../../../lib/echo';
+import { handleChat } from "@/lib/chat";
+import  EchoConfig  from '@/lib/echo';
 import { useEffect} from 'react';
-
-const ChatPage = () => {
-    useEffect( () =>{
-        let currentUser = JSON.parse(localStorage.getItem('user'));
+const ChatPage =  () => {
+    
+    useEffect(  ()   =>{  
         EchoConfig();
-        // window.Echo.presence(`presence.onlinechat.${currentUser.id}`)
         window.Echo.private(`presence.onlinechat.fdsgsdgfewyffhsfgywsjfjsfhjsfhj`)
         .listen('UserRequestStatusUpdate', (e) => {
             console.log(e.message,'test');
