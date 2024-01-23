@@ -1,25 +1,30 @@
 "use client";
-// import { handleChat } from "../../../lib/chat";
-// import  EchoConfig  from '../../../lib/echo';
 import { handleChat } from "@/lib/chat";
-import  EchoConfig  from '@/lib/echo';
+import  { echoTest }  from '@/lib/echo';
 import { useEffect} from 'react';
+
 const ChatPage =  () => {
-    
-    useEffect(  ()   =>{  
-        EchoConfig();
-        window.Echo.private(`presence.onlinechat.fdsgsdgfewyffhsfgywsjfjsfhjsfhj`)
-        .listen('UserRequestStatusUpdate', (e) => {
-            console.log(e.message,'test');
-        });
-        console.log('loading...');
-        return () =>{
-            console.log('clean up...');
-        }
+    useEffect(  ()   => { 
+        echoTest();  
+        const channel = window.echo.join('presence.onlinechat.fdsgsdgfewyffhsfgywsjfjsfhjsfhj');
+
+        channel.here((user) => {
+            console.log('you subscribed' + user);
+        })
+        .joining((user) => {
+            console.log('you subscribed');
+        })
+        .leaving((users) => {
+            console.log('you subscribed');
+        })
+        .listen('.onlinechat', (event) => {
+                    console.log(event);
+                });
+
     }, []);
   return (
     <>
-        <div className="bg-white rounded-2xl px-3 py-3 my-8 w-4/6">
+        <div className="bg-white rounded-2xl px-3 py-3 my-8 w-3/6">
         <h1 className="text-black font-black my-2">Chat System</h1>
         <div className=" border-2 shadow-sm h-[370px] my-2 flex justify-center py-2">
             <h1 className="text-black"> Hello world </h1>

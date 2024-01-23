@@ -10,7 +10,6 @@ const LoginPage =   () => {
   const route = useRouter();
   const [state, authenticate] = useFormState(authentication, initialState);
 
-
   useEffect(() => {
     if(state?.message === 'true') {
       route.push('/chat');
@@ -39,7 +38,6 @@ const LoginPage =   () => {
         </div>
       </form>
       
-    
     </main>
   )
 }
