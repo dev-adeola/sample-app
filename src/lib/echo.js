@@ -39,7 +39,6 @@ export const  echoTest = () => {
         }
     });
 
-    
     console.log(window.echo);
 }
 
