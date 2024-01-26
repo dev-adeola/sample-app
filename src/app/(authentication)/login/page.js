@@ -12,7 +12,7 @@ const LoginPage =   () => {
 
   useEffect(() => {
     if(state?.message === 'true') {
-      route.push('/chat');
+      route.push('/newchat');
     }
   });
       
