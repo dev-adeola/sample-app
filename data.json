@@ -1,0 +1,237 @@
+{
+    "metadata": {
+      "ipinfo": {
+        "status": "success",
+        "country": "Nigeria",
+        "regionName": "Lagos",
+        "city": "Lagos",
+        "district": "",
+        "zip": "",
+        "lat": 6.4474,
+        "lon": 3.3903,
+        "timezone": "Africa/Lagos",
+        "isp": "MTN NIGERIA Communication limited",
+        "org": "Reserved Enterprice Internet LAN 3GFW",
+        "as": "AS29465 MTN NIGERIA Communication limited",
+        "mobile": true,
+        "proxy": false,
+        "hosting": true,
+        "query": "197.210.28.107"
+      },
+      "device_info": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36",
+      "user_id": "121"
+    },
+    "data": {
+      "index": {
+        "data": {},
+        "message": "Successfully continued to the main checks.",
+        "status": true
+      },
+      "countries": {
+        "data": {
+          "country": "Nigeria"
+        },
+        "message": "Successfully continued to the next step.",
+        "status": true
+      },
+      "user-data": {
+        "data": {
+          "firstName": "adeola",
+          "lastName": "oladoja",
+          "dob": "1989-04-16"
+        },
+        "message": "",
+        "status": true
+      },
+      "government-data": {
+        "data": {
+          "entity": {
+            "title": "",
+            "nationality": "",
+            "bvn": "22324280081",
+            "first_name": "IFEANYI",
+            "middle_name": "",
+            "last_name": "OKERE",
+            "date_of_birth": "01-Jun-1982",
+            "phone_number1": "08011111111",
+            "phone_number2": "",
+            "gender": "Male",
+            "enrollment_bank": "",
+            "enrollment_branch": "",
+            "email": "",
+            "lga_of_origin": "",
+            "lga_of_residence": "",
+            "marital_status": "",
+            "nin": "",
+            "name_on_card": "",
+            "residential_address": "",
+            "state_of_origin": "",
+            "state_of_residence": "",
+            "watch_listed": "",
+            "level_of_account": "",
+            "registration_date": "",
+            "customer": "6bb82c41-e15e-4308-b99d-e9640818eca9",
+            "image_url": "https://dojah-kyc.s3-us-east-2.amazonaws.com/John_Doe_1688377760081373.jpg"
+          },
+          "message": "",
+          "status": true
+        }
+      },
+      "phone-number": {
+        "data": {
+          "phone": "2349032266089"
+        },
+        "message": "2349032266089 validation Successful",
+        "status": true
+      },
+      "email": {
+        "data": {
+          "email": "adeola.a.oladoja@gmail.com"
+        },
+        "status": true,
+        "message": "adeola.a.oladoja@gmail.com validation Successful"
+      },
+      "address": {
+        "message": "Successfully verified your address",
+        "status": true,
+        "data": {
+          "location": {
+            "userLocation": {
+              "latitude": "7.499177199999999",
+              "longitude": "4.515236",
+              "name": "Olubuse Street, Ife, Nigeria"
+            },
+            "addressLocation": {
+              "latitude": "7.5002977",
+              "longitude": "4.5146133"
+            }
+          }
+        }
+      },
+      "id": {
+        "data": {
+          "idUrl": "https://dojah-files.s3.us-east-2.amazonaws.com/sandbox_verification_placeholder.png",
+          "backUrl": "",
+          "idData": {
+            "first_name": "John",
+            "last_name": "Doe",
+            "middle_name": "",
+            "nationality": "Nigerian",
+            "mrz_status": "",
+            "expiry_date": "2020-01-01",
+            "document_type": "Id Card",
+            "document_number": "123456789",
+            "date_of_birth": "1990-01-01",
+            "date_issued": "2019-01-01",
+            "extras": ""
+          }
+        },
+        "status": true,
+        "message": "Successfully verified your id"
+      },
+      "selfie": {
+        "data": {
+          "selfieUrl": "https://dojah-kyc.s3.us-east-2.amazonaws.com/sandbox_kyc_image.png"
+        },
+        "message": "Successfully validated your liveness",
+        "status": true
+      },
+      "additional-document": [
+        {
+          "document_type": "image",
+          "document_url": "https://dojah-images.s3.amazonaws.com/65bb75989774ce0031c75312c0058635-9dd9-48f2-9ba7-22831dd34491.jpeg"
+        }
+      ]
+    },
+    "governmentData": {
+      "title": "",
+      "nationality": "",
+      "bvn": "22324280081",
+      "first_name": "IFEANYI",
+      "middle_name": "",
+      "last_name": "OKERE",
+      "date_of_birth": "01-Jun-1982",
+      "phone_number1": "08011111111",
+      "phone_number2": "",
+      "gender": "Male",
+      "enrollment_bank": "",
+      "enrollment_branch": "",
+      "email": "",
+      "lga_of_origin": "",
+      "lga_of_residence": "",
+      "marital_status": "",
+      "nin": "",
+      "name_on_card": "",
+      "residential_address": "",
+      "state_of_origin": "",
+      "state_of_residence": "",
+      "watch_listed": "",
+      "level_of_account": "",
+      "registration_date": "",
+      "customer": "6bb82c41-e15e-4308-b99d-e9640818eca9",
+      "image_url": "https://dojah-kyc.s3-us-east-2.amazonaws.com/John_Doe_1688377760081373.jpg"
+    },
+    "userDetails": {
+      "title": "",
+      "nationality": "",
+      "bvn": "22324280081",
+      "first_name": "IFEANYI",
+      "middle_name": "",
+      "last_name": "OKERE",
+      "date_of_birth": "01-Jun-1982",
+      "phone_number1": "08011111111",
+      "phone_number2": "",
+      "gender": "Male",
+      "enrollment_bank": "",
+      "enrollment_branch": "",
+      "email": "",
+      "lga_of_origin": "",
+      "lga_of_residence": "",
+      "marital_status": "",
+      "nin": "",
+      "name_on_card": "",
+      "residential_address": "",
+      "state_of_origin": "",
+      "state_of_residence": "",
+      "watch_listed": "",
+      "level_of_account": "",
+      "registration_date": "",
+      "customer": "6bb82c41-e15e-4308-b99d-e9640818eca9",
+      "image_url": "https://dojah-kyc.s3-us-east-2.amazonaws.com/John_Doe_1688377760081373.jpg"
+    },
+    "idType": "BVN",
+    "value": "123456789",
+    "additionalDocument": [
+      {
+        "document_type": "image",
+        "document_url": "https://dojah-images.s3.amazonaws.com/65bb75989774ce0031c75312c0058635-9dd9-48f2-9ba7-22831dd34491.jpeg"
+      }
+    ],
+    "idData": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "middle_name": "",
+      "nationality": "Nigerian",
+      "mrz_status": "",
+      "expiry_date": "2020-01-01",
+      "document_type": "Id Card",
+      "document_number": "123456789",
+      "date_of_birth": "1990-01-01",
+      "date_issued": "2019-01-01",
+      "extras": ""
+    },
+    "idUrl": "https://dojah-files.s3.us-east-2.amazonaws.com/sandbox_verification_placeholder.png",
+    "backUrl": "",
+    "message": "Successfully completed the verification.",
+    "referenceId": "DJ-4015FA474D",
+    "verificationMode": "LIVENESS",
+    "verificationType": "NG-NIN-SLIP",
+    "verificationValue": "123456789",
+    "verificationUrl": "https://app.dojah.io/verifications/bio-data/DJ-4015FA474D",
+    "selfieUrl": "https://dojah-kyc.s3.us-east-2.amazonaws.com/sandbox_kyc_image.png",
+    "status": true,
+    "aml": {
+      "status": false
+    },
+    "verificationStatus": "Completed"
+  }
