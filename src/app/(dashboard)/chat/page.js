@@ -59,7 +59,7 @@ export default function ChatPage   ()  {
    *  You can pass any values within the object
    */
   const metadata = {
-    user_id: '121',
+    user_id: '1',
   };
  
 
